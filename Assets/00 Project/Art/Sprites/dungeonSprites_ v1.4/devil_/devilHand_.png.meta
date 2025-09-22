@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      devilHand__0: -131701379298982274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

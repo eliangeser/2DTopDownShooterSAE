@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hobgoblinHand__0: 4644626681923527959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

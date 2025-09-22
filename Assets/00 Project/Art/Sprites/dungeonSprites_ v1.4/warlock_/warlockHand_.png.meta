@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      warlockHand__0: 5160990246734324244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1122,7 +1122,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      necromancer__0: -5678850528937392535
+      necromancer__1: -653746594149655576
+      necromancer__10: -5145130120114051666
+      necromancer__11: 931335863645884156
+      necromancer__12: -4379952885801109263
+      necromancer__13: 1533793255079257069
+      necromancer__14: 804825856041111587
+      necromancer__15: 2526315904838111762
+      necromancer__16: 6731985087640923553
+      necromancer__17: 3199512273862378538
+      necromancer__18: 91396497134413397
+      necromancer__19: 102633695297982103
+      necromancer__2: 8693674916323443884
+      necromancer__20: 7386849649404737924
+      necromancer__21: -6844167331033596886
+      necromancer__22: 2190797424772908351
+      necromancer__23: 7478277292118871470
+      necromancer__24: 7718150162151080819
+      necromancer__25: 3547898247365988165
+      necromancer__26: 88918440644274128
+      necromancer__27: 7874012173027214078
+      necromancer__28: -2289626215599298547
+      necromancer__29: -8143341985283930921
+      necromancer__3: 8735025407690895437
+      necromancer__30: 4823687183242382595
+      necromancer__31: 4820601126714464354
+      necromancer__32: 5334167023864294354
+      necromancer__33: -8290530167802070044
+      necromancer__34: 1144625184469827133
+      necromancer__35: -3596956312478633629
+      necromancer__36: 1789608649175857961
+      necromancer__37: 5052324219975888000
+      necromancer__38: -7772995418295684613
+      necromancer__39: -2757569222305948736
+      necromancer__4: 3951904673448053412
+      necromancer__5: 6420106257633680128
+      necromancer__6: -7762685587143563611
+      necromancer__7: 7165859496306946218
+      necromancer__8: -6850996517655000934
+      necromancer__9: 3398498197587911009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

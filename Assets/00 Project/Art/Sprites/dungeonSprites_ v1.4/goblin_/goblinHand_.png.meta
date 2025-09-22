@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      goblinHand__0: 3988899640507189061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
