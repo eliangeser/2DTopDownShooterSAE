@@ -11,12 +11,35 @@ public class PlayerManager : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    Camera cam;
+    AudioSource audioSource;
+
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform bulletSpawnTransform;
+    [SerializeField] Transform weaponRoot;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        cam = Camera.main;
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        // Mouse Pos
+        Vector2 mousePixelPos = Mouse.current.position.ReadValue();
+
+        // Conv Pixel to Game Pos
+        Vector2 mouseWorldPos = cam.ScreenToWorldPoint(mousePixelPos);
+
+        // Calc Dir To Mouse
+        Vector2 direction = mouseWorldPos - (Vector2)transform.position;
+
+        // Rot Root Along Dir
+        weaponRoot.right = direction;
     }
 
     private void FixedUpdate()
@@ -36,6 +59,7 @@ public class PlayerManager : MonoBehaviour
         FlipSprite();
         UpdateMoveAniamtion();
     }
+
     void FlipSprite()
     {
         if(moveInput.x > 0)
@@ -50,6 +74,19 @@ public class PlayerManager : MonoBehaviour
         animator.SetFloat("MoveInput", moveAmount);
     }
 
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            Shoot();
+        }
+    }
 
+    void Shoot()
+    {
+        audioSource.pitch = 1 + Random.Range(-0.2f, 0.2f);
+        audioSource.Play();
 
+        Instantiate(bullet, bulletSpawnTransform.position, bulletSpawnTransform.rotation);
+    }
 }

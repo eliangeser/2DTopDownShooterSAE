@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] Transform player;
+    public Transform player;
 
     Vector2 targetDirection;
     float moveSpeed = 5;
